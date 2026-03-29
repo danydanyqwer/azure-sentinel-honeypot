@@ -1,5 +1,10 @@
 # Azure Sentinel Honeypot Lab
 
+## Tools & Technologies
+![Azure](https://img.shields.io/badge/Microsoft_Azure-0089D6?style=flat&logo=microsoft-azure&logoColor=white)
+![Sentinel](https://img.shields.io/badge/Microsoft_Sentinel-0078D4?style=flat&logo=microsoft&logoColor=white)
+![KQL](https://img.shields.io/badge/KQL-Query_Language-blue)
+
 ## Overview
 Deployed intentionally exposed Windows VM in Azure to attract and analyze real-world attacks.
 
