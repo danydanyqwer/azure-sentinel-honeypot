@@ -32,11 +32,12 @@ Deployed intentionally exposed Windows VM in Azure to attract and analyze real-w
 
 
 ## Username Analysis
-Top targeted usernames revealed use of international credential stuffing wordlist:
-- administrator (2,022 attempts)
-- user (892)
-- admin (841)
-- administrador (270) — Spanish variant confirms international wordlist
+Top 5 targeted usernames revealed use of international credential stuffing wordlist:
+- administrator (2,325 attempts)
+- user (1012)
+- admin (983)
+- administrador (322) — Spanish variant confirms international wordlist
+- usuario (259)
 
 ## Detection Engineering
 Custom KQL Analytic Rule created in Microsoft Sentinel:
