@@ -99,7 +99,7 @@ Note: Azure Log Analytics workspace does not support geo_info_from_ip_address() 
 
 ### IP Overview — Attackers from 8 countries
 ![IP Overview](screenshots/ip-overview2.png)
-Attacker list updated continuously. Screenshots represent data collected in first 24 hours of deployment.
+##Attacker list updated continuously. Screenshots represent data collected in first 24 hours of deployment.
 ### Username Analysis — International credential stuffing wordlist
 ![Username Analysis](screenshots/username-analysis.png)
 
