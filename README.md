@@ -16,7 +16,7 @@ Deployed intentionally exposed Windows VM in Azure to attract and analyze real-w
 ## Findings
 - 70,000+ failed logon attempts in 48 hours
 - 11 unique source IPs from 8 countries
-- Primary attacker: Ukrainian organization using Netherlands VPS infrastructure
+- Primary activity appears to originate from infrastructure associated with Ukrainian entities, likely using Netherlands-based VPS hosting.
 - Attack type: SMB brute force (Logon Type 3, NTLM authentication)
 - Automated botnet: ~500 attempts per 5 minutes, consistent pattern
 
