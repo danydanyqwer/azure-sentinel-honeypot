@@ -88,6 +88,9 @@ Future improvements: Logic App integration for automatic IP geolocation via exte
 Note: Azure Log Analytics workspace does not support geo_info_from_ip_address() function. Country mapping was done manually based on IP geolocation lookup via AbuseIPDB and VirusTotal.
 ## Screenshots
 
+### Attack-map - 8 countries
+![Incidents](screenshots/attack-map.png)
+
 ### Sentinel Incidents — 10 automated incidents generated
 ![Incidents](screenshots/sentinel-incidents.png)
 
