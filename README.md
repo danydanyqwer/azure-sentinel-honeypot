@@ -47,6 +47,7 @@ Top 5 targeted usernames revealed use of international credential stuffing wordl
 ## Detection Engineering
 Custom KQL Analytic Rule created in Microsoft Sentinel:
 - Detects 50+ failed logons per 5 minutes from single IP
+- Analytic Rule threshold set at 50 attempts/5min — intentionally filters opportunistic scanners to focus on sustained brute force campaigns
 - Entity mapping for automated IP correlation
 - Custom details: attempt count + username list per alert
 
