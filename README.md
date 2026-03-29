@@ -30,6 +30,7 @@ Deployed intentionally exposed Windows VM in Azure to attract and analyze real-w
 | 91.217.81.232 | Russia | 71% | 3 |
 | 80.66.83.43 | Finland | 100% | 2 |
 | 80.94.95.83 | Romania | 100% | 2 |
+| 194.165.16.161 | Lithuania| 100% | 2 |
 | 34.76.59.29 | Belgium | 100% | 1 |
 | 192.81.131.106 | USA | 100% | 1 |
 | 120.89.41.100 | Philippines  | 100% | 1 |
