@@ -14,8 +14,8 @@ Deployed intentionally exposed Windows VM in Azure to attract and analyze real-w
 - Event ID 4625 (Failed Logon) monitored via custom KQL Analytic Rule
 
 ## Findings
-- 70,000+ failed logon attempts in 24 hours
-- 8 unique source IPs from 5 countries
+- 70,000+ failed logon attempts in 48 hours
+- 11 unique source IPs from 8 countries
 - Primary attacker: Ukrainian organization using Netherlands VPS infrastructure
 - Attack type: SMB brute force (Logon Type 3, NTLM authentication)
 - Automated botnet: ~500 attempts per 5 minutes, consistent pattern
@@ -83,16 +83,19 @@ SecurityEvent
 - Strong password policy blocked 70,000+ attempts completely
 - Automated botnets scan Azure IPs within hours of deployment
 - Geolocation inconsistency between tools — infrastructure ≠ operator origin
+- Note: geo_info_from_ip_address() not supported in this workspace — country mapping done manually via AbuseIPDB and VirusTotal
 
-Future improvements: Logic App integration for automatic IP geolocation via external API
-Note: Azure Log Analytics workspace does not support geo_info_from_ip_address() function. Country mapping was done manually based on IP geolocation lookup via AbuseIPDB and VirusTotal.
+## Future Improvements
+- Logic App integration for automatic IP geolocation via external API
+- Linux VM honeypot for SSH brute force monitoring
+- Automated IP blocking via Logic App playbook
 ## Screenshots
 
-### Dashboard 
-![Incidents](screenshots/dashboard.png)
+### Dashboard - Attack Overview
+![Dashboard](screenshots/dashboard.png)
 
 ### Attack-map - 8 countries
-![Incidents](screenshots/attack-map.png)
+![Attack-map](screenshots/attack-map.png)
 
 ### Sentinel Incidents — 10 automated incidents generated
 ![Incidents](screenshots/sentinel-incidents.png)
