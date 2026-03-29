@@ -32,7 +32,7 @@ Deployed intentionally exposed Windows VM in Azure to attract and analyze real-w
 | 80.94.95.83 | Romania | 100% | 2 |
 | 34.76.59.29 | Belgium | 100% | 1 |
 | 192.81.131.106 | USA | 100% | 1 |
-
+| 120.89.41.100 | Philippines  | 100% | 1 |
 
 ## Username Analysis
 Top 5 targeted usernames revealed use of international credential stuffing wordlist:
