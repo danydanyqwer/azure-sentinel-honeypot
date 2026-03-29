@@ -5,8 +5,10 @@ Deployed intentionally exposed Windows VM in Azure to attract and analyze real-w
 
 ## Setup
 - Windows VM in Azure with all ports open (NSG any/any)
-- Microsoft Sentinel connected via DCR + AMA
-- Event ID 4625 monitored for failed authentication
+- Microsoft Sentinel workspace configured
+- Data Collection Rule (DCR) + Azure Monitor Agent (AMA) for log ingestion
+- Windows Security Events data connector enabled
+- Event ID 4625 (Failed Logon) monitored via custom KQL Analytic Rule
 
 ## Findings
 - 70,000+ failed logon attempts in 24 hours
