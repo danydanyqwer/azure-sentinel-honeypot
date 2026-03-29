@@ -97,7 +97,7 @@ Note: Azure Log Analytics workspace does not support geo_info_from_ip_address() 
 ### Attack Pattern — Automated botnet (~500 attempts/5min)
 ![Attack Pattern](screenshots/attack-pattern.png)
 
-### IP Overview — Attackers from 5 countries
+### IP Overview — Attackers from 8 countries
 ![IP Overview](screenshots/ip-overview2.png)
 Attacker list updated continuously. Screenshots represent data collected in first 24 hours of deployment.
 ### Username Analysis — International credential stuffing wordlist
