@@ -81,4 +81,21 @@ SecurityEvent
 - Geolocation inconsistency between tools — infrastructure ≠ operator origin
 
 ## Screenshots
-[adaugi screenshots]
+
+### Sentinel Incidents — 10 automated incidents generated
+![Incidents](screenshots/sentinel-incidents.png)
+
+### Incident Graph & IP Details — Ukrainian infrastructure identified
+![Incident Graph](screenshots/incident-graph-ip-details.png)
+
+### Attack Pattern — Automated botnet (~500 attempts/5min)
+![Attack Pattern](screenshots/attack-pattern.png)
+
+### IP Overview — Attackers from 5 countries
+![IP Overview](screenshots/ip-overview.png)
+
+### Username Analysis — International credential stuffing wordlist
+![Username Analysis](screenshots/username-analysis.png)
+
+### Analytic Rule — Custom KQL detection rule
+![Analytic Rule](screenshots/analytic-rule.png)
