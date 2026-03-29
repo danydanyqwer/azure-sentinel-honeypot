@@ -45,6 +45,36 @@ Custom KQL Analytic Rule created in Microsoft Sentinel:
 - Entity mapping for automated IP correlation
 - Custom details: attempt count + username list per alert
 
+## KQL Queries Used
+
+### Brute Force Detection Rule
+```kql
+SecurityEvent
+| where EventID == 4625
+| where LogonType == 3
+| where isnotempty(IpAddress)
+| where IpAddress != "-"
+| where IpAddress !in ("127.0.0.1", "::1")
+| summarize Attempts=count(), Accounts=make_set(TargetUserName, 5) by IpAddress, bin(TimeGenerated, 5m)
+| where Attempts >= 50
+| order by Attempts desc
+```
+
+### Username Analysis
+```kql
+SecurityEvent
+| where EventID == 4625
+| summarize Attempts=count() by TargetUserName
+| order by Attempts desc
+| take 20
+```
+## Tools Used
+- Microsoft Azure
+- Microsoft Sentinel
+- KQL (Kusto Query Language)
+- AbuseIPDB
+- VirusTotal
+
 ## Lessons Learned
 - Strong password policy blocked 70,000+ attempts completely
 - Automated botnets scan Azure IPs within hours of deployment
