@@ -83,6 +83,8 @@ SecurityEvent
 - Automated botnets scan Azure IPs within hours of deployment
 - Geolocation inconsistency between tools — infrastructure ≠ operator origin
 
+Future improvements: Logic App integration for automatic IP geolocation via external API
+Note: Azure Log Analytics workspace does not support geo_info_from_ip_address() function. Country mapping was done manually based on IP geolocation lookup via AbuseIPDB and VirusTotal.
 ## Screenshots
 
 ### Sentinel Incidents — 10 automated incidents generated
@@ -102,3 +104,5 @@ SecurityEvent
 
 ### Analytic Rule — Custom KQL detection rule
 ![Analytic Rule](screenshots/analytic-rule.png)
+
+
