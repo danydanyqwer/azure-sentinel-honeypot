@@ -20,10 +20,16 @@ Deployed intentionally exposed Windows VM in Azure to attract and analyze real-w
 ## Attacker Analysis
 | IP | Country | AbuseIPDB Score | Attempts |
 |---|---|---|---|
-| 185.156.73.74 | Netherlands (UA org) | 62% | 17,254 |
-| 185.156.73.59 | Netherlands (UA org) | 34% | 16,957 |
-| 92.63.197.69 | Netherlands (UA org) | X% | 16,624 |
-| 91.217.81.232 | Russia | X% | 3 |
+| 185.156.73.74 | Netherlands (UA org) | 38% | 17,254 |
+| 185.156.73.59 | Netherlands (UA org) | 56% | 16,957 |
+| 185.156.73.69 | Netherlands (UA org) | 65% | 16,829 |
+| 92.63.197.69 | Netherlands (UA org) | 60% | 16,624 |
+| 91.217.81.232 | Russia | 71% | 3 |
+| 80.66.83.43 | Finland | 100% | 2 |
+| 80.94.95.83 | Romania | 100% | 2 |
+| 34.76.59.29 | Belgium | 100% | 1 |
+| 192.81.131.106 | USA | 100% | 1 |
+
 
 ## Username Analysis
 Top targeted usernames revealed use of international credential stuffing wordlist:
