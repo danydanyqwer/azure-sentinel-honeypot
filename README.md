@@ -1,4 +1,4 @@
-# Azure Sentinel Honeypot Lab — Real-World Brute Force Detection & Analysis
+<img width="939" height="708" alt="image" src="https://github.com/user-attachments/assets/a5316766-b934-456f-bd69-73f4c3a56b3c" /># Azure Sentinel Honeypot Lab — Real-World Brute Force Detection & Analysis
 ![Azure](https://img.shields.io/badge/Microsoft_Azure-0089D6?style=flat&logo=microsoft-azure&logoColor=white)
 ![Sentinel](https://img.shields.io/badge/Microsoft_Sentinel-0078D4?style=flat&logo=microsoft&logoColor=white)
 ![KQL](https://img.shields.io/badge/KQL-Query_Language-blue)
@@ -64,6 +64,17 @@ SecurityEvent
 | summarize Attempts=count(), Accounts=make_set(TargetUserName, 5) by IpAddress, bin(TimeGenerated, 5m)
 | where Attempts >= 50
 | order by Attempts desc
+```
+
+### After-Hours Activity Detection Rule
+```kql
+SecurityEvent
+| where EventID in (4624, 4625)
+| where not(hourofday(TimeGenerated) between (8 .. 17))
+| where isnotempty(IpAddress) and IpAddress != "-"
+| where IpAddress !in ("127.0.0.1", "::1")
+| summarize Attempts=count() , Accounts=make_set(TargetUserName,10) by bin(TimeGenerated,10m), IpAddress, EventID
+| where Attempts >=10
 ```
 
 ### Username Analysis
